@@ -426,7 +426,7 @@ body::before {
 .hero-subtitle {
     margin-top: 24px;
 
-    color: #777777;
+    color: #fff;
 
     font-size: 13px;
 
@@ -434,7 +434,7 @@ body::before {
 }
 
 .hero-subtitle strong {
-    color: #b9956a;
+    color: #f88900;
 
     font-weight: 600;
 
@@ -458,7 +458,7 @@ body::before {
 }
 
 .hero-description {
-    color: #555555;
+    color: #fff;
 
     font-size: 11px;
 

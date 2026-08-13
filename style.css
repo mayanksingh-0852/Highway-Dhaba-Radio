@@ -24,7 +24,7 @@ body {
             rgba(0, 0, 0, 0.55),
             rgba(0, 0, 0, 0.88)
         ), */
-        url("./img_1.png");
+        url("./img_1.webp");
 
     background-size: cover;
 
@@ -1591,7 +1591,7 @@ body::before {
 
     body {
         /* Mobile ke liye nayi image ka path yahan dalein */
-        background-image: url("./img-3.png");
+        background-image: url("./img-3.webp");
 
         background-attachment: scroll;
         background-position: center center;

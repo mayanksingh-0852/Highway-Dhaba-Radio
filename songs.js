@@ -11,7 +11,8 @@ const songs = [
 
         artist: "Old Hindi Classics",
 
-        youtubeId: "https://www.youtube.com/embed/goidtvB-O54"
+        youtubeId: "https://www.youtube.com/embed/goidtvB-O54",
+        category: "90s"
     },
 
 

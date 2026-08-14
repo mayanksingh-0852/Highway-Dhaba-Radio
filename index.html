@@ -1,600 +1,235 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="hi">
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="HIGHWAY RADIO — जहाँ सफ़र के साथ पुराने गाने चलते रहें।"
-    >
-
-    <title>
-        HIGHWAY RADIO
-    </title>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HIGHWAY RADIO — जहाँ सफ़र के साथ पुराने गाने चलते रहें।" />
+    <title>HIGHWAY RADIO</title>
     <!-- Google Font -->
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-        rel="stylesheet"
-    >
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Your CSS -->
-    <link
-        rel="stylesheet"
-        href="./style.css"
-    >
-    <link rel="shortcut icon" href="cargo-truck.png" type="image/x-icon">
-
-</head>
-
-
-<body>
-
-
-    <!-- =====================================================
-         BACKGROUND
-    ====================================================== -->
-
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="cargo-truck.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- BACKGROUND -->
     <div class="background-overlay"></div>
 
-
-    <!-- =====================================================
-         HEADER
-    ====================================================== -->
-
+    <!-- HEADER -->
     <header class="main-header">
-
-        <div class="header-inner">
-
-
-            <!-- Logo -->
-
-            <a
-                href="#"
-                class="logo"
-            >
-
-                <span class="logo-icon">
-                    🚚
-                </span>
-
-                <span class="logo-text">
-                    HIGHWAY RADIO
-                </span>
-
-            </a>
-
-
-            <!-- Navigation -->
-
-            <nav class="main-nav">
-
-                <button
-                    id="songsButton"
-                    class="nav-btn"
-                >
-                    🎵 Songs
-                </button>
-
-                <button
-                   
-                    class="nav-btn"
-                >
-                    📻 <a href="https://open.spotify.com/" target="_blank">Spotify</a>
-                </button>
-
-            </nav>
-
-        </div>
-
+      <div class="header-inner">
+        <a href="#" class="logo">
+          <span class="logo-icon">🚚</span>
+          <span class="logo-text">HIGHWAY RADIO</span>
+        </a>
+        <nav class="main-nav">
+          <button id="songsButton" class="nav-btn">🎵 Songs</button>
+          <button class="nav-btn">
+            📻 <a href="https://open.spotify.com/" target="_blank" style="color:inherit; text-decoration:none;">Spotify</a>
+          </button>
+          <!-- Added ID here so JS can target it -->
+          <button id="playlistButton" class="nav-btn open-playlist-btn">
+            <i class="fas fa-list"></i> Playlists
+          </button>
+        </nav>
+      </div>
     </header>
 
-
-
-    <!-- =====================================================
-         HERO SECTION
-    ====================================================== -->
-
+    <!-- HERO SECTION -->
     <main>
-
-        <section class="hero-section">
-
-
-            <!-- Top Information -->
-
-            <div class="hero-top">
-
-
-                <!-- Clock -->
-
-                <div class="live-clock">
-
-                    <span class="info-label">
-                        LOCAL TIME
-                    </span>
-
-                    <strong id="clock">
-                        12:00:00 PM
-                    </strong>
-
-                </div>
-
-
-                <!-- Live Listener -->
-
-                <div class="live-listeners">
-
-                    <span class="live-dot"></span>
-
-                    <span>
-                        <strong id="onlineCount">
-                            1000
-                        </strong>
-                        listening now
-                    </span>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- Hero Content -->
-
-            <div class="hero-content">
-
-
-                <span class="hero-label">
-                    EST. ON THE HIGHWAY
-                </span>
-
-
-                <h1>
-                    सड़कें अपनी,
-                    <span>किस्से पुराने।</span>
-                </h1>
-
-
-                <p class="hero-subtitle">
-
-                    <strong>
-                        HIGHWAY RADIO
-                    </strong>
-
-                    — जहाँ सफ़र के साथ पुराने गाने चलते रहें।
-
-                </p>
-
-
-                <div class="hero-line"></div>
-
-
-                <p class="hero-description">
-
-                    पुराने नग़मे, लंबी सड़कें और
-                    सफ़र की अपनी कहानी।
-
-                </p>
-
-
-            </div>
-
-        </section>
-
-
-
-
-
+      <section class="hero-section">
+        <div class="hero-top">
+          <div class="live-clock">
+            <span class="info-label">LOCAL TIME</span>
+            <strong id="clock">12:00:00 PM</strong>
+          </div>
+          <div class="live-listeners">
+            <span class="live-dot"></span>
+            <span><strong id="onlineCount">1000</strong> listening now</span>
+          </div>
+        </div>
+        <div class="hero-content">
+          <span class="hero-label">EST. ON THE HIGHWAY</span>
+          <h1>सड़कें अपनी, <span>किस्से पुराने।</span></h1>
+          <p class="hero-subtitle">
+            <strong>HIGHWAY RADIO</strong> — जहाँ सफ़र के साथ पुराने गाने चलते रहें।
+          </p>
+          <div class="hero-line"></div>
+          <p class="hero-description">पुराने नग़मे, लंबी सड़कें और सफ़र की अपनी कहानी।</p>
+        </div>
+      </section>
     </main>
 
-
-
-    <!-- =====================================================
-         PLAYLIST PANEL
-    ====================================================== -->
-
-    <aside
-        id="playlistPanel"
-        class="side-panel playlist-panel"
-    >
-
-        <div class="panel-header">
-
-            <div>
-
-                <span class="small-label">
-                    YOUR MUSIC
-                </span>
-
-                <h2>
-                    Playlist
-                </h2>
-
-            </div>
-
-
-            <button
-                id="closePlaylist"
-                class="close-panel"
-                aria-label="Close Playlist"
-            >
-                ×
-            </button>
-
+    <!-- CATEGORY PLAYLIST PANEL (FIXED) -->
+    <aside id="playlistPanel" class="side-panel">
+      <div class="panel-header">
+        <div>
+          <span class="small-label">YOUR MUSIC</span>
+          <h2>Radio Playlists</h2>
         </div>
-
-
-        <div
-            id="playlistContainer"
-            class="songs-container"
-        >
-        </div>
-
+        <button id="closePlaylist" class="close-panel" aria-label="Close Playlist">&times;</button>
+      </div>
+      
+      <div class="playlist-container" id="playlistContainer">
+          <!-- 1. 90s Playlist -->
+          <div class="playlist-item active" data-playlist="90s">
+              <div class="playing-icon" style="width: 35px; height: 35px; font-size: 14px;">📻</div>
+              <div class="song-details">
+                  <h3>90s Evergreen</h3>
+                  <p>Classic Bollywood Hits</p>
+              </div>
+          </div>
+          <!-- 2. 2000s Playlist -->
+          <div class="playlist-item" data-playlist="2000s">
+              <div class="playing-icon" style="width: 35px; height: 35px; font-size: 14px;">📼</div>
+              <div class="song-details">
+                  <h3>2000s Superhits</h3>
+                  <p>Nostalgic 2000s Era</p>
+              </div>
+          </div>
+          <!-- 3. Latest Songs -->
+          <div class="playlist-item" data-playlist="latest">
+              <div class="playing-icon" style="width: 35px; height: 35px; font-size: 14px;">🔥</div>
+              <div class="song-details">
+                  <h3>Latest Trending</h3>
+                  <p>Top Charts & New Releases</p>
+              </div>
+          </div>
+          <!-- 4. Punjabi Playlist -->
+          <div class="playlist-item" data-playlist="punjabi">
+              <div class="playing-icon" style="width: 35px; height: 35px; font-size: 14px;">🚜</div>
+              <div class="song-details">
+                  <h3>Punjabi Swag</h3>
+                  <p>High Energy Beats</p>
+              </div>
+          </div>
+          <!-- 5. Bhojpuri Playlist -->
+          <div class="playlist-item" data-playlist="bhojpuri">
+              <div class="playing-icon" style="width: 35px; height: 35px; font-size: 14px;">💃</div>
+              <div class="song-details">
+                  <h3>Bhojpuri Tadka</h3>
+                  <p>Desi Vibes</p>
+              </div>
+          </div>
+          <!-- 6. Haryanvi Playlist -->
+          <div class="playlist-item" data-playlist="haryanvi">
+              <div class="playing-icon" style="width: 35px; height: 35px; font-size: 14px;">💪</div>
+              <div class="song-details">
+                  <h3>Haryanvi Hits</h3>
+                  <p>System Paad Denge</p>
+              </div>
+          </div>
+      </div>
     </aside>
 
-
-
-    <!-- =====================================================
-         SONGS PANEL
-    ====================================================== -->
-
-    <aside
-        id="songsPanel"
-        class="side-panel songs-panel"
-    >
-
-        <div class="panel-header">
-
-            <div>
-
-                <span class="small-label">
-                    HIGHWAY RADIO
-                </span>
-
-                <h2>
-                    All Songs
-                </h2>
-
-            </div>
-
-
-            <button
-                id="closeSongs"
-                class="close-panel"
-                aria-label="Close Songs"
-            >
-                ×
-            </button>
-
+  <!-- SONGS PANEL -->
+    <aside id="songsPanel" class="side-panel songs-panel">
+      <div class="panel-header">
+        <div>
+          <span class="small-label">HIGHWAY RADIO</span>
+          <!-- यहाँ id="songsPanelTitle" जोड़ा गया है -->
+          <h2 id="songsPanelTitle">All Songs</h2> 
         </div>
-
-
-        <div
-            id="songsContainer"
-            class="songs-container"
-        >
-        </div>
-
+        <button id="closeSongs" class="close-panel" aria-label="Close Songs">&times;</button>
+      </div>
+      <div id="songsContainer" class="songs-container"></div>
     </aside>
 
-
-
-    <!-- =====================================================
-         CUSTOM MUSIC PLAYER
-    ====================================================== -->
-
+    <!-- CUSTOM MUSIC PLAYER -->
     <section class="radio-player">
-
-
-        <div class="player-inner">
-
-
-            <!-- Song Information -->
-
-            <div class="now-playing">
-
-
-                <div class="playing-icon">
-                    ♪
-                </div>
-
-
-                <div class="song-info">
-
-                    <span class="playing-label">
-                        NOW PLAYING
-                    </span>
-
-
-                    <h2 id="songTitle">
-                        HIGHWAY RADIO
-                    </h2>
-
-
-                    <p id="songArtist">
-                        पुराने सफ़र, पुराने नग़मे
-                    </p>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- Main Controls -->
-
-            <div class="player-controls">
-
-
-                <button
-                    id="previousButton"
-                    class="control-btn"
-                    type="button"
-                    aria-label="Previous Song"
-                >
-                    ⏮
-                </button>
-
-
-                <button
-                    id="playButton"
-                    class="play-btn"
-                    type="button"
-                    aria-label="Play or Pause"
-                >
-                    ▶
-                </button>
-
-
-                <button
-                    id="nextButton"
-                    class="control-btn"
-                    type="button"
-                    aria-label="Next Song"
-                >
-                    ⏭
-                </button>
-
-
-            </div>
-
-
-
-            <!-- Progress -->
-
-            <div class="progress-section">
-
-
-                <span id="currentTime">
-                    0:00
-                </span>
-
-
-                <input
-                    type="range"
-                    id="progressBar"
-                    min="0"
-                    max="100"
-                    value="0"
-                    aria-label="Song Progress"
-                >
-
-
-                <span id="totalTime">
-                    0:00
-                </span>
-
-
-            </div>
-
-
-
-            <!-- Volume -->
-
-            <div class="volume-control">
-
-
-                <button
-                    id="volumeIcon"
-                    class="volume-icon"
-                    type="button"
-                    aria-label="Mute or Unmute"
-                >
-                    🔊
-                </button>
-
-
-                <input
-                    type="range"
-                    id="volumeBar"
-                    min="0"
-                    max="100"
-                    value="80"
-                    aria-label="Volume"
-                >
-
-
-                <span
-                    id="volumeValue"
-                    class="volume-value"
-                >
-                    80%
-                </span>
-
-
-            </div>
-
-
+      <div class="player-inner">
+        <div class="now-playing">
+          <div class="playing-icon">♪</div>
+          <div class="song-info">
+            <span class="playing-label">NOW PLAYING</span>
+            <h2 id="songTitle">HIGHWAY RADIO</h2>
+            <p id="songArtist">पुराने सफ़र, पुराने नग़मे</p>
+          </div>
         </div>
-
+        <div class="player-controls">
+          <button id="previousButton" class="control-btn" type="button" aria-label="Previous Song">⏮</button>
+          <button id="playButton" class="play-btn" type="button" aria-label="Play or Pause">▶</button>
+          <button id="nextButton" class="control-btn" type="button" aria-label="Next Song">⏭</button>
+        </div>
+        <div class="progress-section">
+          <span id="currentTime">0:00</span>
+          <input type="range" id="progressBar" min="0" max="100" value="0" aria-label="Song Progress" />
+          <span id="totalTime">0:00</span>
+        </div>
+        <div class="volume-control">
+          <button id="volumeIcon" class="volume-icon" type="button" aria-label="Mute or Unmute">🔊</button>
+          <input type="range" id="volumeBar" min="0" max="100" value="80" aria-label="Volume" />
+          <span id="volumeValue" class="volume-value">80%</span>
+        </div>
+      </div>
     </section>
 
+    <!-- HIGHWAY RADIO EXPERIENCE CONTROLS -->
+    <div id="ambientLayer" class="ambient-layer" aria-hidden="true">
+      <div id="rainLayer" class="rain-layer"></div>
+      <div id="highwayLights" class="highway-lights"></div>
+      <div class="ambient-vignette"></div>
+    </div>
 
+    <section class="experience-controls" aria-label="Highway Radio experience controls">
+      <button id="rainToggle" class="experience-btn" type="button" aria-pressed="false" title="Rain ON/OFF">
+        🌧️ <span>Rain</span>
+      </button>
+      <button id="lightsToggle" class="experience-btn active" type="button" aria-pressed="true" title="Highway Lights ON/OFF">
+        💡 <span>Lights</span>
+      </button>
+      <button id="themeToggle" class="experience-btn active" type="button" aria-pressed="true" title="Switch to Day Mode">
+        🌙 <span>Night</span>
+      </button>
+      <button id="driveToggle" class="experience-btn drive-btn" type="button" aria-pressed="false" title="Drive Mode">
+        🚗 <span>Full Screen</span>
+      </button>
+    </section>
 
-    <!-- =====================================================
-         HIDDEN YOUTUBE PLAYER
-    ====================================================== -->
+    <!-- MUSIC VISUALIZER -->
+    <div id="musicVisualizer" class="music-visualizer" aria-hidden="true">
+      <span></span><span></span><span></span><span></span> 
+      <span></span><span></span><span></span><span></span> 
+      <span></span><span></span><span></span><span></span>
+    </div>
 
+    <!-- HIDDEN YOUTUBE PLAYER -->
     <div id="youtube-player"></div>
 
-
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
-
+    <!-- FOOTER -->
     <footer class="site-footer">
-
-
-        <div class="footer-glow"></div>
-
-
-        <div class="footer-content">
-
-
-            <!-- Footer Brand -->
-
-            <div class="footer-brand">
-
-
-                <div class="footer-logo">
-                    🚚
-                </div>
-
-
-                <div>
-
-                    <h3>
-                        HIGHWAY RADIO
-                    </h3>
-
-
-                    <p>
-                        जहाँ सफ़र के साथ पुराने गाने चलते रहें।
-                    </p>
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- Divider -->
-
-            <div class="footer-divider"></div>
-
-
-
-            <!-- Contact -->
-
-            <div class="footer-contact">
-
-
-                <span class="contact-label">
-                    CREATED BY
-                </span>
-
-
-                <h4>
-                    Mayank Singh
-                </h4>
-
-
-                <div class="contact-links">
-
-
-                    <a
-                        href="tel:+91 82108 91075"
-                    >
-                        📞 +91 82108 91075
-                    </a>
-
-
-                    <a
-                        href="mailto:mayanksinghdivra007@gmail.com"
-                    >
-                        ✉️ mayanksinghdivra007@gmail.com
-                    </a>
-
-
-                </div>
-
-
-            </div>
-
-
+      <div class="footer-glow"></div>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">🚚</div>
+          <div>
+            <h3>HIGHWAY RADIO</h3>
+            <p>जहाँ सफ़र के साथ पुराने गाने चलते रहें।</p>
+          </div>
         </div>
-
-
-
-        <!-- Footer Bottom -->
-
-        <div class="footer-bottom">
-
-
-            <p>
-                © 2026 HIGHWAY RADIO
-            </p>
-
-
-            <p>
-                Made with ❤️ for old songs &amp; long drives.
-            </p>
-
-
+        <div class="footer-divider"></div>
+        <div class="footer-contact">
+          <span class="contact-label">CREATED BY</span>
+          <h4>Mayank Singh</h4>
+          <div class="contact-links">
+            <a href="tel:+91 82108 91075">📞 +91 82108 91075</a>
+            <a href="mailto:mayanksinghdivra007@gmail.com">✉️ mayanksinghdivra007@gmail.com</a>
+          </div>
         </div>
-
-
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 HIGHWAY RADIO</p>
+        <p>Made with ❤️ for old songs &amp; long drives.</p>
+      </div>
     </footer>
 
-
-
-    <!-- =====================================================
-         YOUTUBE IFRAME API
-    ====================================================== -->
-
-    <script
-        src="https://www.youtube.com/iframe_api"
-    ></script>
-
-
-    <!-- =====================================================
-         SONG DATA
-    ====================================================== -->
-
-    <script
-        src="./songs.js"
-    ></script>
-
-
-    <!-- =====================================================
-         MAIN JAVASCRIPT
-    ====================================================== -->
-
-    <script
-        src="./script.js"
-    ></script>
-
-
-</body>
-
+    <!-- SCRIPTS -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./songs.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>

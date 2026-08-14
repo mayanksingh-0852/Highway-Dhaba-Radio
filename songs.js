@@ -87,66 +87,70 @@ const songs = [
     },
     
     {
-        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
-        artist: " KumarSanu | Rahul R | Anu Agarwal",
-        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+        title: "Pahin Ke Chali Bikini",
+        artist: " Mahua Singh | Purav Jha",
+        youtubeId: "https://www.youtube.com/embed/2CnatpIv8qQ",
         category: "Bhojpuri"
+        // <iframe width="913" height="513" src="https://www.youtube.com/embed/2CnatpIv8qQ" title="#Video | #Mahua Singh | Purav Jha | पहिन के चली बिकनी | Pahin Ke Chali Bikini | Bhojpuri Hit Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     },
     
     {
-        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
-        artist: " KumarSanu | Rahul R | Anu Agarwal",
-        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+        title: "Love Ke Tonic Piyal Kara",
+        artist: " Arvind Akela (Kalu Ji)",
+        youtubeId: "https://www.youtube.com/embed/G2WzjQnhaao",
         category: "Bhojpuri"
+        // <iframe width="913" height="513" src="https://www.youtube.com/embed/G2WzjQnhaao" title="लव के टॉनिक पियल करs - Love Ke Tonic Piyal Kara - D J Wali Chhori - Bhojpuri Hit Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     },
     
     {
-        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
-        artist: " KumarSanu | Rahul R | Anu Agarwal",
-        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+        title: "Lollypop",
+        artist: " Pawan Singh ",
+        youtubeId: "https://www.youtube.com/embed/Gbxsf5y-eU0",
         category: "Bhojpuri"
+        // <iframe width="923" height="425" src="https://www.youtube.com/embed/Gbxsf5y-eU0" title="लॉलीपॉप लागेलु | #Pawan Singh (Official Video) Kamriya Kare Lapalap Lollypop Lagelu | Superhit Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     },
     
     {
-        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
-        artist: " KumarSanu | Rahul R | Anu Agarwal",
-        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+        title: "Saniya Mirja Cut Nathuniya",
+        artist: "  Pawan Singh ",
+        youtubeId: "https://www.youtube.com/embed/9ohKAreRz-I",
         category: "Bhojpuri"
+        // <iframe width="913" height="513" src="https://www.youtube.com/embed/9ohKAreRz-I" title="Video | सानिया मिर्जा कट नथुनिया | Pawan Singh | Saniya Mirja Cut Nathuniya | Superhit Bhojpuri Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     },
     
-    {
-        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
-        artist: " KumarSanu | Rahul R | Anu Agarwal",
-        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
-        category: "Bhojpuri"
-    },
+    // {
+    //     title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+    //     artist: " KumarSanu | Rahul R | Anu Agarwal",
+    //     youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+    //     category: "Bhojpuri"
+    // },
     
-    {
-        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
-        artist: " KumarSanu | Rahul R | Anu Agarwal",
-        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
-        category: "Bhojpuri"
-    },
+    // {
+    //     title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+    //     artist: " KumarSanu | Rahul R | Anu Agarwal",
+    //     youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+    //     category: "Bhojpuri"
+    // },
     
-    {
-        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
-        artist: " KumarSanu | Rahul R | Anu Agarwal",
-        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
-        category: "Bhojpuri"
-    },
+    // {
+    //     title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+    //     artist: " KumarSanu | Rahul R | Anu Agarwal",
+    //     youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+    //     category: "Bhojpuri"
+    // },
     
-    {
-        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
-        artist: " KumarSanu | Rahul R | Anu Agarwal",
-        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
-        category: "Bhojpuri"
-    },
+    // {
+    //     title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+    //     artist: " KumarSanu | Rahul R | Anu Agarwal",
+    //     youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+    //     category: "Bhojpuri"
+    // },
     
-    {
-        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
-        artist: " KumarSanu | Rahul R | Anu Agarwal",
-        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
-        category: "Bhojpuri"
-    },
+    // {
+    //     title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+    //     artist: " KumarSanu | Rahul R | Anu Agarwal",
+    //     youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+    //     category: "Bhojpuri"
+    // },
     
 ];

@@ -118,13 +118,14 @@ const songs = [
         // <iframe width="913" height="513" src="https://www.youtube.com/embed/9ohKAreRz-I" title="Video | सानिया मिर्जा कट नथुनिया | Pawan Singh | Saniya Mirja Cut Nathuniya | Superhit Bhojpuri Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     },
     
-    // {
-    //     title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
-    //     artist: " KumarSanu | Rahul R | Anu Agarwal",
-    //     youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
-    //     category: "Bhojpuri"
-    // },
-    
+    {
+         title: "बबुआन",
+         artist: " Pawan Singh | Shilpi Raj | Chandani Singh",
+         youtubeId: "https://www.youtube.com/embed/gZQDZVI99qc",
+         category: "Bhojpuri"
+        //  <iframe width="913" height="513" src="https://www.youtube.com/embed/gZQDZVI99qc" title="#Video | #Pawan Singh | बबुआन | #Shilpi Raj #Chandani Singh | New Bhojpuri #babuan_song #pawansingh" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    },
+
     // {
     //     title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
     //     artist: " KumarSanu | Rahul R | Anu Agarwal",

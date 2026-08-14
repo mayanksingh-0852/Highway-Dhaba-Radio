@@ -74,12 +74,12 @@ const songs = [
     },
     {
         title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
-        artist: " KumarSanu | Rahul R | Anu Agarwal",
+        artist: " Power Star Pawan Singh | Shivani Singh ",
         youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
         category: "2000s"
     },
     {
-        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+        title: " सड़िया | Sadiya",
         artist: " KumarSanu | Rahul R | Anu Agarwal",
         youtubeId: "https://www.youtube.com/embed/j1PFv7qIPXo",
         category: "Bhojpuri"

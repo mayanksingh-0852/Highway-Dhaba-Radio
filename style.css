@@ -7,6 +7,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+ ::-webkit-scrollbar{
+    display: none;
+ }
+ html, body, .side-panel{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+ }
 
 html {
     scroll-behavior: smooth;

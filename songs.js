@@ -21,53 +21,132 @@ const songs = [
 
         artist: "Amitabh Bachchan | Kishore Kumar",
 
-        youtubeId: "https://www.youtube.com/embed/SCMtgVo-K_o"
+        youtubeId: "https://www.youtube.com/embed/SCMtgVo-K_o",
+        category: "90s"
     },
 
 
     {
         title: "Salame-Ishq Meri Jaan",
         artist: "Amitabh Bachchan | Kishore Kumar",
-        youtubeId: "https://www.youtube.com/embed/W7H62yTSZ3U"
+        youtubeId: "https://www.youtube.com/embed/W7H62yTSZ3U",
+        category: "90s"
     },
 
     {
         title: "Jadu Hai Nasha Hai",
         artist: "Shreya Ghoshal | Shaan | M.M. Kreem",
-        youtubeId: "https://www.youtube.com/embed/XBXdbK06i7Y"
+        youtubeId: "https://www.youtube.com/embed/XBXdbK06i7Y",
+        category: "2000s"
     },
     {
         title: "Mera Chand Mujhe Aaya Hai Nazar",
         artist: "Mr. Aashiq | Kumar Sanu | Saif Ali Khan, Twinkle Khanna",
-        youtubeId: "https://www.youtube.com/embed/vOKvEUnI0_E"
+        youtubeId: "https://www.youtube.com/embed/vOKvEUnI0_E",
+        category: "2000s"
        
     },
     {
         title: "Zara Zara",
         artist: "R. Madhavan | Dia Mirza | Bombay Jayashri",
-        youtubeId: "https://www.youtube.com/embed/6CXI5ZQgo7A"
+        youtubeId: "https://www.youtube.com/embed/6CXI5ZQgo7A",
+        category: "2000s"
     },
     {
         title: "Beech Bajariya",
         artist: " Ansh | Sapna Awasthi | Nadeem-Shravan | Sameer",
-        youtubeId: "https://www.youtube.com/embed/5UD8NFc2aTs"
+        youtubeId: "https://www.youtube.com/embed/5UD8NFc2aTs",
+        category: "90s"
         
     },
     {
         title: "Jooma Chumma De De",
         artist: "Amitabh Bachchan | Sudesh Bhosle | Kavita Krishnamurthy | Anand B",
-        youtubeId: "https://www.youtube.com/embed/bVzIHMskZmQ"
+        youtubeId: "https://www.youtube.com/embed/bVzIHMskZmQ",
+        category: "90s"
        
     },
     {
         title: "Rim Jhim Rim Jhim",
         artist: "Anil Kapoor | Manisha Koirala | Kavita Krishnamurthy | Kumar Sanu",
-        youtubeId: "https://www.youtube.com/embed/AMz6mnBo4Kc"
+        youtubeId: "https://www.youtube.com/embed/AMz6mnBo4Kc",
+        category: "2000s"
     },
     {
         title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
         artist: " KumarSanu | Rahul R | Anu Agarwal",
-        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA"
+        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+        category: "2000s"
+    },
+    {
+        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+        artist: " KumarSanu | Rahul R | Anu Agarwal",
+        youtubeId: "https://www.youtube.com/embed/j1PFv7qIPXo",
+        category: "Bhojpuri"
+        // <iframe width="913" height="513" src="https://www.youtube.com/embed/j1PFv7qIPXo" title="#Video | Power Star #Pawan Singh | सड़िया | Sadiya | #Shivani Singh | Bhojpuri Hit Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    },
+    
+    {
+        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+        artist: " KumarSanu | Rahul R | Anu Agarwal",
+        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+        category: "Bhojpuri"
+    },
+    
+    {
+        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+        artist: " KumarSanu | Rahul R | Anu Agarwal",
+        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+        category: "Bhojpuri"
+    },
+    
+    {
+        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+        artist: " KumarSanu | Rahul R | Anu Agarwal",
+        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+        category: "Bhojpuri"
+    },
+    
+    {
+        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+        artist: " KumarSanu | Rahul R | Anu Agarwal",
+        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+        category: "Bhojpuri"
+    },
+    
+    {
+        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+        artist: " KumarSanu | Rahul R | Anu Agarwal",
+        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+        category: "Bhojpuri"
+    },
+    
+    {
+        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+        artist: " KumarSanu | Rahul R | Anu Agarwal",
+        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+        category: "Bhojpuri"
+    },
+    
+    {
+        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+        artist: " KumarSanu | Rahul R | Anu Agarwal",
+        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+        category: "Bhojpuri"
+    },
+    
+    {
+        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+        artist: " KumarSanu | Rahul R | Anu Agarwal",
+        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+        category: "Bhojpuri"
+    },
+    
+    {
+        title: "Bas Ek Sanam Chahiye Aashiqui KeLiye",
+        artist: " KumarSanu | Rahul R | Anu Agarwal",
+        youtubeId: "https://www.youtube.com/embed/eQqGEIaiHKA",
+        category: "Bhojpuri"
     },
     
 ];

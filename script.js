@@ -90,10 +90,30 @@ updateClock();
 setInterval(updateClock, 1000);
 
 /* =========================================================
-   REAL LISTENER COUNT
+   SIMULATED LIVE LISTENER COUNT
 ========================================================= */
 if (onlineCount) {
-    onlineCount.textContent = "—";
+    // एक बेस नंबर सेट करो (मान लो 1204 से शुरू हो रहा है)
+    let currentListeners = 1204;
+    
+    // पहली बार में नंबर दिखाओ (toLocaleString से नंबर में कॉमा लग जाएगा, जैसे 1,204)
+    onlineCount.textContent = currentListeners.toLocaleString();
+
+    // हर 4 सेकंड में नंबर को थोड़ा ऊपर-नीचे करने का लॉजिक
+    setInterval(() => {
+        // रैंडमली डिसाइड करो कि नंबर घटेगा या बढ़ेगा (-3 से +5 के बीच)
+        const change = Math.floor(Math.random() * 9) - 3; 
+        
+        currentListeners += change;
+
+        // यह सुनिश्चित करने के लिए कि नंबर 1000 से नीचे ना जाए
+        if (currentListeners < 1000) {
+            currentListeners = 1000 + Math.floor(Math.random() * 10);
+        }
+
+        // नया नंबर वेबसाइट पर अपडेट कर दो
+        onlineCount.textContent = currentListeners.toLocaleString();
+    }, 4000); // 4000 मिलीसेकंड = 4 सेकंड
 }
 
 /* =========================================================

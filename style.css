@@ -378,7 +378,7 @@ main {
     inset: 0;
     overflow: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.5s ease-in-out;
 }
 
 body.rain-active .rain-layer {
@@ -387,17 +387,17 @@ body.rain-active .rain-layer {
 
 .rain-drop {
     position: absolute;
-    top: -30px;
-    width: 1px;
-    border-radius: 50%;
-    background: rgba(210, 225, 255, 0.55);
-    transform: rotate(14deg);
-    animation: highwayRain linear infinite;
+    top: -100px; /* ताकि बूंदें अचानक बीच से ना निकलें */
+    /* पानी की असली धार जैसा इफ़ेक्ट (ऊपर से पारदर्शी, नीचे से सफ़ेद) */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.65) 100%);
+    border-radius: 50% 50% 0 0;
+    pointer-events: none;
+    animation: realisticRain linear infinite;
 }
 
-@keyframes highwayRain {
-    from { transform: translate3d(0, -30px, 0) rotate(14deg); }
-    to { transform: translate3d(-80px, 110vh, 0) rotate(14deg); }
+@keyframes realisticRain {
+    0% { transform: translate3d(0, -100px, 0) rotate(12deg); }
+    100% { transform: translate3d(-120px, 110vh, 0) rotate(12deg); }
 }
 
 #youtube-player { 

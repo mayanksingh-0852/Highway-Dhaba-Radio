@@ -568,19 +568,55 @@ function updateExperienceButton(button, enabled) {
 function createRain() {
     if (!rainLayer) return;
     rainLayer.innerHTML = "";
-    const count = window.innerWidth <= 700 ? 65 : 100;
+    
+    // स्क्रीन के हिसाब से बूंदों की संख्या (अब थोड़ी ज़्यादा सघन बारिश)
+    const count = window.innerWidth <= 700 ? 80 : 150; 
+
     for (let i = 0; i < count; i++) {
         const drop = document.createElement("span");
         drop.className = "rain-drop";
-        drop.style.left = `${Math.random() * 110 - 5}%`;
-        drop.style.animationDuration = `${0.45 + Math.random() * 0.65}s`;
-        drop.style.animationDelay = `${Math.random() * 1.5}s`;
-        drop.style.opacity = `${0.18 + Math.random() * 0.45}`;
-        drop.style.height = `${10 + Math.random() * 18}px`;
+        
+        // स्क्रीन पर रैंडम जगह से गिरेंगी
+        drop.style.left = `${Math.random() * 120 - 10}%`;
+
+        // 3D Depth Logic (पास, बीच में, और दूर की बारिश)
+        const depth = Math.random();
+        let duration, height, width, opacity, blur;
+
+        if (depth < 0.2) {
+            // 1. Foreground (पास की बूंदें - तेज़, बड़ी और हल्की धुंधली)
+            duration = 0.5 + Math.random() * 0.3;
+            height = 35 + Math.random() * 20;
+            width = 2;
+            opacity = 0.5 + Math.random() * 0.3;
+            blur = "blur(1px)";
+        } else if (depth < 0.7) {
+            // 2. Midground (बीच की बूंदें - नार्मल)
+            duration = 1.2 + Math.random() * 0.4;
+            height = 20 + Math.random() * 15;
+            width = 1.5;
+            opacity = 0.3 + Math.random() * 0.3;
+            blur = "none";
+        } else {
+            // 3. Background (दूर की बूंदें - धीमी, छोटी और हल्की)
+            duration = 1.8 + Math.random() * 0.5;
+            height = 10 + Math.random() * 10;
+            width = 1;
+            opacity = 0.15 + Math.random() * 0.2;
+            blur = "blur(0.5px)";
+        }
+
+        // स्टाइल अप्लाई करो
+        drop.style.animationDuration = `${duration}s`;
+        drop.style.animationDelay = `${Math.random() * 2}s`;
+        drop.style.height = `${height}px`;
+        drop.style.width = `${width}px`;
+        drop.style.opacity = opacity;
+        drop.style.filter = blur;
+
         rainLayer.appendChild(drop);
     }
 }
-
 function setRain(enabled) {
     experienceSettings.rain = Boolean(enabled);
     document.body.classList.toggle("rain-active", experienceSettings.rain);

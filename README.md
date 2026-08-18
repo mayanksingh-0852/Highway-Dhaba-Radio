@@ -60,7 +60,7 @@ const songs = [
 Supported Categories: 90s, 2000s, latest, punjabi, bhojpuri, haryanvi.
 
 👨‍💻 Author
-Kumar Mayank.
+Kumar Mayank
 
 Front-End Web Developer based in Delhi.
 

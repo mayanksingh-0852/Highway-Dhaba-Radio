@@ -77,7 +77,7 @@ const songs = [
     artist: " KumarSanu | Rahul R | Anu Agarwal",
     youtubeId: "https://www.youtube.com/embed/j1PFv7qIPXo",
     category: "Bhojpuri",
-    // <iframe width="913" height="513" src="https://www.youtube.com/embed/j1PFv7qIPXo" title="#Video | Power Star #Pawan Singh | सड़िया | Sadiya | #Shivani Singh | Bhojpuri Hit Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   
   },
 
   {
@@ -85,7 +85,7 @@ const songs = [
     artist: " Mahua Singh | Purav Jha",
     youtubeId: "https://www.youtube.com/embed/2CnatpIv8qQ",
     category: "Bhojpuri",
-    // <iframe width="913" height="513" src="https://www.youtube.com/embed/2CnatpIv8qQ" title="#Video | #Mahua Singh | Purav Jha | पहिन के चली बिकनी | Pahin Ke Chali Bikini | Bhojpuri Hit Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
   },
 
   {
@@ -93,7 +93,7 @@ const songs = [
     artist: " Arvind Akela (Kalu Ji)",
     youtubeId: "https://www.youtube.com/embed/G2WzjQnhaao",
     category: "Bhojpuri",
-    // <iframe width="913" height="513" src="https://www.youtube.com/embed/G2WzjQnhaao" title="लव के टॉनिक पियल करs - Love Ke Tonic Piyal Kara - D J Wali Chhori - Bhojpuri Hit Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   
   },
 
   {
@@ -101,7 +101,6 @@ const songs = [
     artist: " Pawan Singh ",
     youtubeId: "https://www.youtube.com/embed/Gbxsf5y-eU0",
     category: "Bhojpuri",
-    // <iframe width="923" height="425" src="https://www.youtube.com/embed/Gbxsf5y-eU0" title="लॉलीपॉप लागेलु | #Pawan Singh (Official Video) Kamriya Kare Lapalap Lollypop Lagelu | Superhit Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   },
 
   {

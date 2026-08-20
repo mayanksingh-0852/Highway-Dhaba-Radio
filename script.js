@@ -562,18 +562,25 @@ if (closeSongs) {
    CLICK OUTSIDE TO CLOSE PANELS
 ========================================================= */
 document.addEventListener("click", (event) => {
-    // 1. अगर Playlist Panel खुला है
+    // 🚀 FIX: अगर क्लिक किसी भी ऐसे बटन पर हुआ है जो पैनल खोलता है, तो उसे इग्नोर करो
+    if (
+        event.target.closest('.open-playlist-btn') || 
+        event.target.closest('#songsButton') || 
+        event.target.closest('.playlist-item')
+    ) {
+        return; // यहीं से वापस लौट जाओ, पैनल बंद मत करो
+    }
+
+    // 1. अगर Playlist Panel खुला है और बाहर क्लिक हुआ है
     if (playlistPanel && playlistPanel.classList.contains("open")) {
-        // चेक करो कि क्लिक पैनल के बाहर हुआ है और ओपन बटन पर भी नहीं हुआ है
-        if (!playlistPanel.contains(event.target) && !playlistButton.contains(event.target)) {
+        if (!playlistPanel.contains(event.target)) {
             playlistPanel.classList.remove("open");
         }
     }
 
-    // 2. अगर Songs Panel खुला है
+    // 2. अगर Songs Panel खुला है और बाहर क्लिक हुआ है
     if (songsPanel && songsPanel.classList.contains("open")) {
-        // चेक करो कि क्लिक पैनल के बाहर हुआ है और ओपन बटन पर भी नहीं हुआ है
-        if (!songsPanel.contains(event.target) && !songsButton.contains(event.target)) {
+        if (!songsPanel.contains(event.target)) {
             songsPanel.classList.remove("open");
         }
     }

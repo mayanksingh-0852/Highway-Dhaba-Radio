@@ -530,12 +530,12 @@ body.rain-active .rain-layer {
     top: 63px;
     right: 0px;
     width: min(380px, 100vw);
-    height: max-content; 
-    max-height: 100vh; 
-    border-bottom-left-radius: 20px; 
-    border-top-left-radius: 20px; 
+    height: max-content;
+    max-height: 72vh;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
     padding: clamp(20px, 4vw, 30px) clamp(16px, 3vw, 22px);
-    background: rgba(12, 12, 12, 0.98);
+    background: rgb(57, 99, 124);
     border-left: 1px solid rgba(255, 255, 255, 0.07);
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
     box-shadow: -15px 0 50px rgba(0, 0, 0, 0.45);
@@ -569,14 +569,14 @@ body.rain-active .rain-layer {
   border: 0;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.05);
-  color: #999999;
+  color: #070707;
   font-size: 23px;
   cursor: pointer;
   transition: 0.2s ease;
 }
 
 .close-panel:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(209, 65, 13, 0.1);
   color: #ffffff;
 }
 
@@ -595,12 +595,12 @@ body.rain-active .rain-layer {
 
 .song-item:hover,
 .playlist-item:hover {
-  background: rgba(255, 255, 255, 0.045);
+  background: rgba(188, 102, 5, 0.98);
 }
 
 .song-item.active,
 .playlist-item.active {
-  background: rgba(196, 133, 59, 0.1);
+  background: rgba(196, 132, 59, 0.98);
   border: 1px solid rgba(196, 133, 59, 0.12);
 }
 
@@ -615,7 +615,7 @@ body.rain-active .rain-layer {
 
 .song-details p {
   margin-top: 4px;
-  color: #666666;
+  color: #fffafa;
   font-size: 10px;
   white-space: nowrap;
   overflow: hidden;

@@ -6,11 +6,81 @@
 
 const songs = [
   {
-    title: "Pyar Hua Chupke Se",
-
-    artist: "Old Hindi Classics",
-
-    youtubeId: "https://www.youtube.com/embed/goidtvB-O54",
+    title: "Zindagi Ek Safar Hai Suhana",
+    artist: "Hema Malini | Rajesh Khanna | Kishore Kumar",
+    youtubeId: "https://www.youtube.com/embed/GjPGVVebVUc",
+    category: "90s",
+  },
+  {
+    title: 'Khaike Paan Banaras Wala',
+    artist: "Amitabh Bachchan | Zeenat Aman | Kishore Kumar",
+    youtubeId: "https://www.youtube.com/embed/jOtn4yVMmLE",
+    category: "90s",
+  },
+  {
+    title: 'Mere Samne Wali Khidki Mein',
+    artist: "Sunil Dutt | Saira Banu | Kishore Kumar",
+    youtubeId: "https://www.youtube.com/embed/qwhjCU5WS64",
+    category: "90s",
+  },
+  {
+    title: "O Mere Dil Ke Chayan",
+    artist: "Lata Mangeshkar | Rajesh Khanna",
+    youtubeId: "https://www.youtube.com/embed/gsTWKkxDGos",
+    category: "90s",
+  },
+  {
+    title: "Yeh Jo Mohabbat Hai",
+    artist: "Kishore Kumar",
+    youtubeId: "https://www.youtube.com/embed/A6Nh4dE7HNQ",
+    category: "90s",
+  },
+  {
+    title: "Musafir Hoon Yaaron",
+    artist: "Jeetendra | Kishore Kumar | Gulzar | R.D. Burman",
+    youtubeId: "https://www.youtube.com/embed/UM1Ub9QA8fo",
+    category: "90s",
+  },
+  {
+    title: "Chukar Mere Man Ko",
+    artist: "Kishore Kumar",
+    youtubeId: "https://www.youtube.com/embed/1MzmICT4w8w",
+    category: "90s",
+  },
+  {
+    title: "AGAR TUM NA HOTE",
+    artist: "Kishore Kumar",
+    youtubeId: "https://www.youtube.com/embed/cCaU0MkGqMs",
+    category: "90s",
+  },
+  {
+    title: "Humen Tumse Pyar Kitna",
+    artist: "Kishore Kumar",
+    youtubeId: "https://www.youtube.com/embed/xdlZXTf2w34",
+    category: "90s",
+  },
+  {
+    title: "Mere Naina Sawan Bhadon",
+    artist: "Lata Mangeshkar | Mehbooba | Rajesh Khanna | Hema Malini",
+    youtubeId: "https://www.youtube.com/embed/sSOK82TTXoU",
+    category: "90s",
+  },
+  {
+    title: 'O Saathi Re',
+    artist:'Amitabh Bachchan | Muqaddar ka Sikandar',
+    youtubeId: "https://www.youtube.com/embed/9uwQYC_gFuw",
+    category: "90s",
+  },
+  {
+    title: 'Chehra Hai Ya Chand Khila Hai',
+    artist:'Rishi Kapoor | Dimple Kapadia | R.D.Burman',
+    youtubeId: "https://www.youtube.com/embed/8drSZlOo3Uo",
+    category: "90s",
+  },
+  {
+    title: 'Gulabi Aankhen jo teri dekhi',
+    artist:'Mohammed Rafi | R. D. Burman',
+    youtubeId: "https://www.youtube.com/embed/Xsn0QjMN3fM",
     category: "90s",
   },
 

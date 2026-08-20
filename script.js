@@ -558,7 +558,26 @@ if (closeSongs) {
     songsPanel?.classList.remove("open"),
   );
 }
+/* =========================================================
+   CLICK OUTSIDE TO CLOSE PANELS
+========================================================= */
+document.addEventListener("click", (event) => {
+    // 1. अगर Playlist Panel खुला है
+    if (playlistPanel && playlistPanel.classList.contains("open")) {
+        // चेक करो कि क्लिक पैनल के बाहर हुआ है और ओपन बटन पर भी नहीं हुआ है
+        if (!playlistPanel.contains(event.target) && !playlistButton.contains(event.target)) {
+            playlistPanel.classList.remove("open");
+        }
+    }
 
+    // 2. अगर Songs Panel खुला है
+    if (songsPanel && songsPanel.classList.contains("open")) {
+        // चेक करो कि क्लिक पैनल के बाहर हुआ है और ओपन बटन पर भी नहीं हुआ है
+        if (!songsPanel.contains(event.target) && !songsButton.contains(event.target)) {
+            songsPanel.classList.remove("open");
+        }
+    }
+});
 /* =========================================================
    PLAYER BUTTON EVENTS
 ========================================================= */
